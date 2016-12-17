@@ -1,0 +1,200 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+header > div:first-child {
+    min-height: 90px;
+}
+
+header ul {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    text-align: right;
+    padding-right: 80px;
+}
+
+header li {
+    display: inline-block;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+header .logo {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.cover {
+    background-image: url(images/home/background.jpg);
+    width: 100%;
+    height: 720px;
+}
+
+.cover > div {
+    height: 720px;
+    display: table;
+}
+
+.cover h1 {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cover .play {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 190px;
+}
+
+h2 {
+    color: #0061a8;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin: 50px auto;
+}
+
+.card p {
+    margin: 30px auto;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn {
+    border: 2px solid #0061a8;
+    border-radius: 100px;
+    color: #0061a8;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 30px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0061a8;
+    color: #ffffff;
+}
+
+.nos-chantiers {
+    background-image: url(images/home/nos-chantiers.jpg);
+    min-height: 630px;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.nos-chantiers > div {
+    padding-left: 100px;
+}
+
+.key-numbers {
+    background-color: #0061a8;
+    color: #ffffff;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+.key-numbers h4 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.key-numbers h3 {
+    font-size: 57px;
+    font-weight: 500;
+}
+
+.key-numbers sub {
+    bottom: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.key-numbers > div {
+    display: table;
+    height: 100%;
+}
+
+.key-numbers > div > div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+}
+
+.key-numbers > div > div > div {
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    padding-right: 20px;
+}
+
+.key-numbers > div:last-of-type > div > div {
+    border-right: none;
+}
+
+.nos-innovations {
+    background-image: url(images/home/nos-innovations.png);
+    min-height: 630px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.nos-innovations > div {
+    padding-left: 100px;
+}
+
+.map {
+    background-image: url(images/home/map.jpg);
+    width: 100%;
+    height: 360px;
+    background-size: contain;
+}
+
+footer {
+    color: #ffffff;
+    height: 140px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140px;
+    text-align: center;
+}
+
+footer div {
+    height: 100%;
+}
+
+footer div:first-of-type {
+    background-color: #a31930;
+}
+
+footer div:last-of-type {
+    background-color: #c31431;
+}
+
+footer div:last-of-type img {
+    margin-right: 20px;
+}
