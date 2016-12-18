@@ -1,10 +1,22 @@
 * {
     font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+
 }
 
 header > div:first-child {
     min-height: 90px;
+
 }
+
+/*.navbar {
+  position: fixed;
+  z-index: 20000000000;
+  box-shadow: 0 1px 1.5px rgba(0,0,0,.12);
+  background: #FFF;
+  border-radius:0px;
+  width:100%;
+}*/
 
 header ul {
     margin-top: 36px;
@@ -25,6 +37,7 @@ header li {
 header .logo {
     margin-left: 80px;
     margin-top: 20px;
+    height: 50px;
 }
 
 .cover {
@@ -71,8 +84,13 @@ p {
     width: 250px;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
     margin: 50px auto;
+}
+
+.card img {
+  max-height: 170px;
+  overflow:hidden;
 }
 
 .card p {
@@ -88,7 +106,7 @@ p {
     color: #0061a8;
     font-size: 20px;
     font-weight: 700;
-    padding: 0 30px;
+    padding: 0 50px;
     line-height: 50px;
     cursor: pointer;
 }
@@ -176,10 +194,10 @@ p {
 
 footer {
     color: #ffffff;
-    height: 140px;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 140px;
+    height: 90px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 90px;
     text-align: center;
 }
 
@@ -197,4 +215,34 @@ footer div:last-of-type {
 
 footer div:last-of-type img {
     margin-right: 20px;
+}
+
+
+/*Specialités*/
+
+.cover-spe {
+    background-image: url(images/specialites/header-background.jpg);
+    width: 100%;
+    height: 520px;
+}
+
+.assainissement {
+  padding-top:50px;
+  padding-bottom:70px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size:16px;
+  color:#324147;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+
+}
+
+.assainissement li {
+  padding-top: 20px;
+  list-style: none;
+}
+
+.assainissement li::before {
+  content: "•"; color: #0061a8;
+  padding:10px;
 }
