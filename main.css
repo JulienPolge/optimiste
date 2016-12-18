@@ -223,10 +223,34 @@ footer div:last-of-type img {
 .cover-spe {
     background-image: url(images/specialites/header-background.jpg);
     width: 100%;
-    height: 520px;
+    height: 450px;
 }
 
-.assainissement {
+.cover-spe > div {
+    height: 520px;
+    display: table;
+}
+
+.cover-spe h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 50px;
+
+}
+
+.page-title{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cover-spe p {
+  font-size: 20px;
+  color: #ffffff;
+
+}
+
+.specialite {
   padding-top:50px;
   padding-bottom:70px;
   padding-left: 50px;
@@ -237,12 +261,33 @@ footer div:last-of-type img {
 
 }
 
-.assainissement li {
+.specialite li {
   padding-top: 20px;
   list-style: none;
 }
 
-.assainissement li::before {
+.specialite li::before {
   content: "•"; color: #0061a8;
   padding:10px;
+}
+
+.large-image-middle {
+    margin-top:100px;
+    background-image: url(images/specialites/photo-3.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.large-image-bottom {
+    margin-top:100px;
+    background-image: url(images/specialites/photo-6.jpg);
+    width: 100%;
+    height: 450px;
+    background-size:cover;
+}
+
+.container{
+  margin-top:100px;
 }
