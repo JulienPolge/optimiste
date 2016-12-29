@@ -19,8 +19,8 @@
                 </div>
                 <div class="col-md-10">
                     <ul>
-                        <li>Accueil</li>
-                        <li>Spécialités</li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specialites.html">Spécialités</a></li>
                         <li>Chantier</li>
                         <li>Environnement</li>
                         <li>Entreprise</li>
@@ -39,11 +39,14 @@
                 </div>
                 <div class="col-md-4">
                     <div class="play">
-                        <img src="images/home/play-icon.svg" alt="play video" />
+                        <img src="images/home/play-icon.svg" alt="play video" onclick="play_video()" />
                     </div>
                 </div>
 
-                <!--<iframe src="https://player.vimeo.com/video/181193402?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+                <div id="main-video" style="display:none;">
+                    <a class="close-btn" onclick="close_video()">&times;</a>
+                    <iframe id="video-iframe" src="https://player.vimeo.com/video/181193402?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
         </header>
 
@@ -116,6 +119,7 @@ Des métiers complémentaires pour répondre à tous vos besoins.</p>
                         <h3>35</h3>
                     </div>
                 </div>
+                <div class="separator"></div>
             </div>
 
             <div class="col-md-2">
@@ -125,6 +129,7 @@ Des métiers complémentaires pour répondre à tous vos besoins.</p>
                         <h3>7,5<sub>M€</sub></h3>
                     </div>
                 </div>
+                <div class="separator"></div>
             </div>
 
             <div class="col-md-2">
@@ -159,5 +164,21 @@ Des métiers complémentaires pour répondre à tous vos besoins.</p>
             </div>
         </footer>
 
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script type="text/javascript">
+            function play_video() {
+                document.getElementById('main-video').style.display = 'block';
+                var iframe = document.getElementById('video-iframe');
+                var player = new Vimeo.Player(iframe);
+                player.play();
+            }
+
+            function close_video() {
+                document.getElementById('main-video').style.display = 'none';
+                var iframe = document.getElementById('video-iframe');
+                var player = new Vimeo.Player(iframe);
+                player.pause();
+            }
+        </script>
     </body>
 </html>

@@ -34,6 +34,15 @@ header li {
     font-size: 14px;
 }
 
+header li a {
+    color: #333;
+    cursor: pointer;
+}
+
+header li a:hover {
+    text-decoration: none;
+}
+
 header .logo {
     margin-left: 80px;
     margin-top: 20px;
@@ -64,6 +73,10 @@ header .logo {
     display: table-cell;
     vertical-align: middle;
     padding-left: 190px;
+}
+
+.cover .play img {
+    cursor: pointer;
 }
 
 h2 {
@@ -163,10 +176,18 @@ p {
     text-align: center;
 }
 
+.key-numbers > div > div.separator {
+    width: 1px;
+    height: 130px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+}
+
 .key-numbers > div > div > div {
     width: 100%;
     text-align: center;
-    border-right: 1px solid rgba(255, 255, 255, 0.6);
     padding-right: 20px;
 }
 
@@ -290,4 +311,47 @@ footer div:last-of-type img {
 
 .container{
   margin-top:100px;
+}
+
+#main-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.57);
+    z-index: 10000;
+    height: 100%;
+}
+
+#main-video a {
+    color: white;
+    font-size: 46px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    line-height: 33px;
+    z-index: 10000;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(37, 37, 37);
+}
+
+#main-video a:hover {
+    text-decoration: none;
+}
+
+#main-video iframe {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 95vw;
+    height: 90vh;
+    margin: 0 auto;
 }
