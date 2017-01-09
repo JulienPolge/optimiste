@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="main.css" media="screen">
+        <link rel="stylesheet" href="chantier.css" media="screen">
+
+        <title>Ouest TP</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <div class="col-md-2 col-sm-12">
+                    <img src="images/home/logo-ouesttp.png" alt="Ouest TP Logo" class="logo" />
+                </div>
+                <div class="col-md-10 col-sm-12">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specialites.html">Spécialités</a></li>
+                        <li><a href="chantier.html">Chantier</a></li>
+                        <li>Environnement</li>
+                        <li>Entreprise</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Renouvellement du réseau</h2>
+                    <hr>
+
+                    <p>Mise en place d'une nouvelle technique pour les travaux de renouvellement de réseau</p>
+
+                    <h4>Résumé du chantier</h4>
+
+                    <dl>
+                        <dt>Client</dt>
+                        <dd>Mairie de Cancale</dd>
+
+                        <dt>Débuté le</dt>
+                        <dd>XX/XX/XXXX</dd>
+
+                        <dt>Livré le</dt>
+                        <dd>XX/XX/XXXX</dd>
+
+                        <dt>Coût total</dt>
+                        <dd>28 000 €</dd>
+
+                        <dt>Localisation</dt>
+                        <dd>Rue Duquesne 35260 Cancale</dd>
+
+                        <dt>Type</dt>
+                        <dd>Eau potable</dd>
+
+                        <dt>Maître d'oeuvre</dt>
+                        <dd>Syndicat Les Eaux de Beaufort</dd>
+                    </dl>
+                </div>
+                <div class="col-md-8">
+                    <img class="article-img" src="images/chantier/le-reseau-deau-potable-se-met-au-vert.png" alt="le réseau d'eau potable se met au vert">
+
+                    <p>Les Eaux de Beaufort tentent avec l’entreprise Ouest TP une nouvelle technique de renouvellement du réseau d’eau potable : la mise en place d’une conduite d’eau par tirage d’un tuyau neuf dans l’ancien tuyau.  « Société, Environnement, Economie, les trois piliers du Développement Durable sont là ! » Indique Jean-Francis RICHEUX , Président du Syndicat des Eaux de Beaufort et Vice-Président du Développement Durable à St Malo Agglomération.<br>
+« Nous avons besoin que les travaux n’impactent pas trop nos commerces et nos administrés. » indique Marcel Le Moal, Vice-Président de Beaufort.<br>
+Les travaux d’eau potable de la rue Duquesne à Cancale sont un exemple d’alliance en réponse aux besoins de la société, de l’environnement et de l’économie. Société : la chaussée n’est pas ouverte sur toute sa longueur, mais sur quelques m². Environnement : cette technique permet de faire venir et évacuer 10 fois moins de matériaux, donc moins de transport et moins de matériaux d’apport, donc moins de CO2. Economie : « Les Eaux de Beaufort plus que jamais renforce une activité économique locale donc les emplois, pour céder aux générations futures un patrimoine en excellent état, au prix le plus juste de 2.30€/m³. Il nous faut préparer l’avenir, en maintenant de l’activité pour aujourd’hui et demain.» déclare Jean-Francis RICHEUX.</p>
+
+                    <img class="article-img" src="images/chantier/Photo0999.png">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="col-md-8">
+                ©2016 Ouest TP |  Les Vignes Chasles 35120 Roz Landrieux | 02 99 80 69 61
+            </div>
+
+            <div class="col-md-4">
+                <img src="images/home/contact-icon.svg" alt="contact" /> Envoyez nous un message!
+            </div>
+        </footer>
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script type="text/javascript">
+            function play_video() {
+                document.getElementById('main-video').style.display = 'block';
+                var iframe = document.getElementById('video-iframe');
+                var player = new Vimeo.Player(iframe);
+                player.play();
+            }
+
+            function close_video() {
+                document.getElementById('main-video').style.display = 'none';
+                var iframe = document.getElementById('video-iframe');
+                var player = new Vimeo.Player(iframe);
+                player.pause();
+            }
+        </script>
+    </body>
+</html>
