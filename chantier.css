@@ -60,4 +60,5 @@ dd {
 
 .article-img {
     margin-bottom: 80px;
+    max-width: 100%;
 }
