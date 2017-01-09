@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="main.css" media="screen">
+        <link rel="stylesheet" href="entreprise.css" media="screen">
+
+        <title>Ouest TP</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <div class="col-md-2 col-sm-12">
+                    <img src="images/home/logo-ouesttp.png" alt="Ouest TP Logo" class="logo" />
+                </div>
+                <div class="col-md-10 col-sm-12">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specialites.html">Spécialités</a></li>
+                        <li><a href="chantier.html">Chantier</a></li>
+                        <li><a href="environnement.html">Environnement</a></li>
+                        <li><a href="entreprise.html">Entreprise</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="entreprise-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Entreprise.</h1>
+
+                        <h2>Afin de vous proposer des prestations de qualité nous investissons dans du matériel à la pointe de la technologie</h2>
+
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Située en Bretagne, <strong>OUEST TP</strong> travaille pour améliorer les réseaux d’assainissement et d’eau potable. Nous réalisons aussi des chantiers de terrassement et des travaux sans tranchée. <br>
+                    Des métiers complémentaires pour répondre à tous vos besoins.</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-6">
+                    <img src="images/entreprise/john-doe.png" alt="">
+                    <h4>Jean Michel Polge</h4>
+                    <h5>Directeur</h5>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <img src="images/entreprise/john-doe.png" alt="">
+                    <h4>Nathalie Guiho</h4>
+                    <h5>Service Administratif</h5>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <img src="images/entreprise/john-doe.png" alt="">
+                    <h4>Fréderic Luthinier</h4>
+                    <h5>Responsable bureau d’étude</h5>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <img src="images/entreprise/john-doe.png" alt="">
+                    <h4>Stéphane Punelle</h4>
+                    <h5>Chargé d’affaire Assainissement</h5>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <img src="images/entreprise/john-doe.png" alt="">
+                    <h4>Ronan Le Flohic</h4>
+                    <h5>Chargé d’affaire Eau Potable</h5>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <img src="images/entreprise/john-doe.png" alt="">
+                    <h4>Jean Claude Veillon</h4>
+                    <h5>Chargé d’affaire Terrassement</h5>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <img src="images/entreprise/john-doe.png" alt="">
+                    <h4>Maxime Grossi</h4>
+                    <h5>Géomètre</h5>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <img src="images/entreprise/john-doe.png" alt="">
+                    <h4>Jacques Bouguet</h4>
+                    <h5>Géomètre</h5>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <img src="images/entreprise/john-doe.png" alt="">
+                    <h4>David Bouillet</h4>
+                    <h5>Chef d’atelier / magasin</h5>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="col-md-8">
+                ©2016 Ouest TP |  Les Vignes Chasles 35120 Roz Landrieux | 02 99 80 69 61
+            </div>
+
+            <div class="col-md-4">
+                <img src="images/home/contact-icon.svg" alt="contact" /> Envoyez nous un message!
+            </div>
+        </footer>
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script type="text/javascript">
+            function play_video() {
+                document.getElementById('main-video').style.display = 'block';
+                var iframe = document.getElementById('video-iframe');
+                var player = new Vimeo.Player(iframe);
+                player.play();
+            }
+
+            function close_video() {
+                document.getElementById('main-video').style.display = 'none';
+                var iframe = document.getElementById('video-iframe');
+                var player = new Vimeo.Player(iframe);
+                player.pause();
+            }
+        </script>
+    </body>
+</html>
