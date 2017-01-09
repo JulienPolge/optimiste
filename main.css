@@ -6,7 +6,6 @@
 
 header > div:first-child {
     min-height: 90px;
-
 }
 
 /*.navbar {
@@ -47,6 +46,21 @@ header .logo {
     margin-left: 80px;
     margin-top: 20px;
     height: 50px;
+}
+
+@media (max-width: 992px) {
+    header > div:first-child {
+        min-height: 160px;
+        text-align: center;
+    }
+
+    header > div:first-child img {
+        margin-left: 0;
+    }
+
+    header ul {
+        text-align: center;
+    }
 }
 
 .cover {
@@ -122,6 +136,7 @@ p {
     padding: 0 50px;
     line-height: 50px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .btn:hover {
@@ -131,9 +146,10 @@ p {
 
 .nos-chantiers {
     background-image: url(images/home/nos-chantiers.jpg);
-    min-height: 630px;
     background-repeat: no-repeat;
     margin-top: 100px;
+    background-size: 50%;
+    background-position-y: 100%;
 }
 
 .nos-chantiers > div {
@@ -143,7 +159,9 @@ p {
 .key-numbers {
     background-color: #0061a8;
     color: #ffffff;
-    height: 250px;
+    min-height: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%;
     text-align: center;
 }
@@ -160,7 +178,7 @@ p {
 
 .key-numbers sub {
     bottom: 0;
-    font-size: 30px;
+    font-size: 0.4em;
     font-weight: 300;
 }
 
@@ -182,7 +200,7 @@ p {
     background-color: rgba(255, 255, 255, 0.6);
     display: inline-block;
     position: absolute;
-    top: 60px;
+    top: 30px;
 }
 
 .key-numbers > div > div > div {
@@ -199,7 +217,8 @@ p {
     background-image: url(images/home/nos-innovations.png);
     min-height: 630px;
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position: 100% 0;
+    background-size: 50%;
 }
 
 .nos-innovations > div {
@@ -210,7 +229,9 @@ p {
     background-image: url(images/home/map.jpg);
     width: 100%;
     height: 360px;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
 }
 
 footer {
@@ -354,4 +375,87 @@ footer div:last-of-type img {
     width: 95vw;
     height: 90vh;
     margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .nos-chantiers .col-md-6 {
+        padding-left: 320px;
+    }
+
+    .cover > div {
+        padding: 0;
+        display: table;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .nos-innovations > div {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cover {
+        height: 490px;
+        background-position: 40% 0%;
+    }
+
+    .cover h1 {
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .nos-chantiers .col-sm-12 {
+        padding-left: 0;
+    }
+
+    .nos-chantiers {
+        background-size: auto 330px;
+        background-position-y: 0;
+        background-position-x: 50%;
+        padding-top: 140px;
+    }
+
+    .nos-innovations {
+        background-position: 50% 0;
+        background-size: auto 330px;
+        padding-top: 240px;
+    }
+
+    .nos-innovations > div,
+    .nos-chantiers > div {
+        padding-left: 30px;
+        text-align: center;
+    }
+
+    .nos-innovations h2,
+    .nos-chantiers h2 {
+        margin-top: 100px;
+    }
+
+    .cover > div {
+        height: auto;
+        padding: 30px;
+        display: table;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .cover .play {
+        padding-left: 0;
+    }
+
+    .key-numbers .col-xs-12 {
+        float: none;
+    }
+
+    .map {
+        height: 100px;
+    }
 }
