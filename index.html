@@ -9,25 +9,30 @@
 
         <link rel="stylesheet" href="main.css" media="screen">
 
+        <link type="image/x-icon" href="images/favicon.png" rel="shortcut icon" />
+
         <title>Ouest TP</title>
     </head>
     <body>
         <header>
+          <section class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div>
                 <div class="col-md-2 col-sm-12">
-                    <img src="images/home/logo-ouesttp.png" alt="Ouest TP Logo" class="logo" />
+                    <a href="index.html"><img src="images/home/logo-ouesttp.png" alt="Ouest TP Logo" class="logo" /></a>
                 </div>
                 <div class="col-md-10 col-sm-12">
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="specialites.html">Spécialités</a></li>
-                        <li><a href="chantier.html">Chantier</a></li>
+                        <li><a href="chantiers.html">Chantiers</a></li>
                         <li><a href="environnement.html">Environnement</a></li>
                         <li><a href="entreprise.html">Entreprise</a></li>
                     </ul>
                 </div>
-            </div>
+          </div>
+          </section>
 
+          <section id="home" class="parallax-section">
             <div class="cover">
                 <div class="col-md-4 col-sm-offset-1 col-sm-5">
                     <h1>
@@ -48,12 +53,13 @@
                     <iframe id="video-iframe" src="https://player.vimeo.com/video/181193402?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
             </div>
+          </section>
         </header>
 
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-center">Nos Métiers.</h2>
+                    <h2 class="metiers text-center">Nos Métiers.</h2>
 
                     <p class="text-center">Située en Bretagne, <strong>OUEST TP</strong> travaille pour améliorer les réseaux d’assainissement et d’eau potable. Nous réalisons aussi des chantiers de terrassement et des travaux sans tranchée.
     Des métiers complémentaires pour répondre à tous vos besoins.</p>
@@ -95,7 +101,7 @@
             </div>
 
             <div class="row text-center">
-                <a href="#" class="btn">En Savoir Plus</a>
+                <a href="specialites.html" class="btn">En Savoir Plus</a>
             </div>
 
             <div class="row">
@@ -117,7 +123,7 @@
             </div>
         </div>
 
-        <div class="key-numbers">
+<!--        <div class="key-numbers">
             <div class="col-md-offset-3 col-md-2 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-12">
                 <div>
                     <div>
@@ -146,7 +152,34 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+        <!--CHIFFRES-->
+        <section id="ouest-counter" class="ouest-bg-section" style="background-color:#0061A8; background-attachment: fixed;">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="ouest-hero-wrap">
+                  <div class="ouest-hero-intro text-center to-animate counter-animate">
+                    <div class="col-md-4 text-center">
+                      <span class="ouest-counter-label">Entreprise créée en</span>
+                      <span class="ouest-counter js-counter" data-from="0" data-to="2012" data-speed="5000" data-refresh-interval="50">2012</span>
+
+
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <span class="ouest-counter-label">Effectifs à la fin 2015</span>
+                      <span class="ouest-counter js-counter" data-from="0" data-to="35" data-speed="5000" data-refresh-interval="50">35</span>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <span class="ouest-counter-label">Chiffre d'affaires 2015</span>
+                      <span class="ouest-counter js-counter" data-from="0" data-to="7500000" data-speed="5000" data-refresh-interval="50">7,5M€</span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--/.CHIFFRES END-->
 
         <div class="nos-innovations">
             <div class="col-md-6 col-sm-12">
@@ -157,8 +190,6 @@
                 <a href="#" class="btn">Découvrir</a>
             </div>
         </div>
-
-        <div class="map"></div>
 
         <footer>
             <div class="col-md-8">
