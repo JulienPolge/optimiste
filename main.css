@@ -17,6 +17,10 @@ header > div:first-child {
   width:100%;
 }*/
 
+.navbar {
+    background-color: #ffffff;
+}
+
 header{
   background-color: #FFF;
 }
