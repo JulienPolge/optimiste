@@ -7,14 +7,14 @@ header {
 }
 
 h2 {
-    font-family: Lato;
+  font-family: Raleway;
 	font-size: 24px;
-	font-weight: bold;
+	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
 	color: rgba(0, 0, 0, 0.82);
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .description{
@@ -29,7 +29,7 @@ hr {
 }
 
 p {
-    font-family: Lato;
+    font-family: Raleway;
     font-size: 16px;
     line-height: 22px;
     font-weight: normal;
@@ -40,7 +40,7 @@ p {
 }
 
 h4 {
-    font-family: Lato;
+    font-family: Raleway;
 	font-size: 16px;
 	font-weight: bold;
 	font-style: normal;
@@ -50,7 +50,7 @@ h4 {
 }
 
 dl {
-    font-family: Lato;
+    font-family: Raleway;
 	font-size: 14px;
 	font-weight: bold;
 	font-style: normal;

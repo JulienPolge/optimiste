@@ -6,7 +6,7 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
 
         <link rel="stylesheet" href="main.css" media="screen">
         <link rel="stylesheet" href="environnement.css" media="screen">
@@ -107,25 +107,9 @@
             </div>
 
             <div class="col-md-4">
-                <img src="images/home/contact-icon.svg" alt="contact" /> Envoyez nous un message!
+              <img src="images/home/contact-icon.svg" alt="contact" /> <a  style="color:#fff;" href="mailto:f.lutinier@ouesttp.fr"> Envoyez nous un message!</a>
             </div>
         </footer>
 
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <script type="text/javascript">
-            function play_video() {
-                document.getElementById('main-video').style.display = 'block';
-                var iframe = document.getElementById('video-iframe');
-                var player = new Vimeo.Player(iframe);
-                player.play();
-            }
-
-            function close_video() {
-                document.getElementById('main-video').style.display = 'none';
-                var iframe = document.getElementById('video-iframe');
-                var player = new Vimeo.Player(iframe);
-                player.pause();
-            }
-        </script>
     </body>
 </html>
