@@ -13,9 +13,11 @@
       -ms-flex-align: center;
           align-items: center;
   height: 60vh;
-  padding-left:190px;
 }
 
+#env h1, #env h2 {
+    padding-left: 190px;
+}
 
 .container {
     margin-top: 0;

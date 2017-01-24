@@ -15,7 +15,11 @@
       -ms-flex-align: center;
           align-items: center;
   height: 60vh;
-  padding-left:190px;
+}
+
+#specialites h1,
+#specialites h4 {
+    padding-left: 190px;
 }
 
 h1 {

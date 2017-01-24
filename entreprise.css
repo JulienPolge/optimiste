@@ -13,7 +13,11 @@
       -ms-flex-align: center;
           align-items: center;
   height: 60vh;
-  padding-left:190px;
+}
+
+#entreprise h1,
+#entreprise h6 {
+    padding-left: 190px;
 }
 
 h1 {
