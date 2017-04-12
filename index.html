@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
         <link rel="stylesheet" href="main.css" media="screen">
 
@@ -19,7 +19,7 @@
           <section class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div>
                 <div class="col-md-2 col-sm-12">
-                    <a href="index.html"><img src="images/home/logo-ouesttp.png" alt="Ouest TP Logo" class="logo" /></a>
+                    <a href="index.html"><img src="images/home/desktop/logo-ouest-tp.png" alt="Ouest TP Logo" class="logo" /></a>
                 </div>
                 <div class="col-md-10 col-sm-12">
                     <ul>
@@ -35,18 +35,16 @@
 
           <section id="home" class="parallax-section">
             <div class="cover">
-                <div class="col-md-4 col-sm-offset-1 col-sm-5">
+                <div class="col-md-12">
                     <h1>
-                        L’expertise <br>
-                        de l’eau <br>
-                        au service <br>
-                        des collectivités.
+                        Notre expertise <br>
+                        au service de vos réseaux<span class="blue-dot">.</span>
                     </h1>
                 </div>
-                <div class="col-md-4 col-sm-2">
-                    <div class="play">
-                        <img src="images/home/play-icon.svg" alt="play video" onclick="play_video()" />
-                    </div>
+                <div class="col-md-12">
+                    <span class="play" onclick="play_video()">
+                        Lire la vidéo
+                    </span>
                 </div>
 
                 <div id="main-video" style="display:none;">
@@ -57,64 +55,80 @@
           </section>
         </header>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="metiers text-center">Nos Métiers.</h2>
+        <div class="light-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Nos Métiers<span class="blue-dot">.</span></h2>
 
-                    <p class="text-center">Située en Bretagne, <strong>OUEST TP</strong> travaille pour améliorer les réseaux d’assainissement et d’eau potable. Nous réalisons aussi des chantiers de terrassement et des travaux sans tranchée.
-    Des métiers complémentaires pour répondre à tous vos besoins.</p>
-                </div>
-            </div>
+                        <hr>
 
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="card">
-                        <img src="images/home/assainissement.jpg" alt="assainissement" />
+                        <p>Située en Bretagne, <strong>OUEST TP</strong> travaille pour améliorer les réseaux d’assainissement et d’eau potable. Nous réalisons aussi des chantiers de terrassement et des travaux sans tranchée.
+                        <br><br>Des métiers complémentaires pour répondre à tous vos besoins.</p>
 
-                        <p>Assainissement <br>&amp; Génie Civil</p>
+                        <p>
+                            <a href="specialites.html" class="btn">En Savoir Plus</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 cards">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="images/home/desktop/assainissement-miniature.jpg" alt="assainissement" />
+
+                                    <p>Assainissement &amp; Génie Civil</p>
+
+                                    <img src="images/home/desktop/grey_arrow.svg" class="arrow">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="images/home/desktop/eaupotable-miniature.jpg" alt="eau potable" />
+
+                                    <p>Eau Potable</p>
+
+                                    <img src="images/home/desktop/grey_arrow.svg" class="arrow">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="images/home/desktop/terrassement-miniature.jpg" alt="terrassements" />
+
+                                    <p>Travaux de Terrassements</p>
+
+                                    <img src="images/home/desktop/grey_arrow.svg" class="arrow">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="images/home/desktop/tranchee-miniature.jpg" alt="travaux sans tranchée" />
+
+                                    <p>Travaux Sans Tranchée</p>
+
+                                    <img src="images/home/desktop/grey_arrow.svg" class="arrow">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="card">
-                        <img src="images/home/eau-potable.jpg" alt="eau potable" />
-
-                        <p>Eau <br>Potable</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="card">
-                        <img src="images/home/terrassements.jpg" alt="terrassements" />
-
-                        <p>Travaux de <br>Terrassements</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="card">
-                        <img src="images/home/sans-tranchee.jpg" alt="travaux sans tranchée" />
-
-                        <p>Travaux <br>Sans Tranchée</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row text-center">
-                <a href="specialites.html" class="btn">En Savoir Plus</a>
-            </div>
-
-            <div class="row">
-
             </div>
         </div>
 
         <div class="nos-chantiers">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-offset-6 col-md-6 col-sm-12">
-                        <h2>Nos <br>chantiers.</h2>
+                    <div class="col-md-7">
+                        <img src="images/home/desktop/nos-chantiers.jpg" alt="Nos chantiers">
+                    </div>
+
+                    <div class="col-md-offset-1 col-md-4 col-sm-12">
+                        <h2>Nos chantiers<span class="blue-dot">.</span></h2>
+
+                        <hr>
 
                         <p>Découvrez les dernières actualités <br>et des informations détaillées sur <br>nos chantiers près de chez vous.</p>
 
@@ -156,23 +170,23 @@
         </div> -->
 
         <!--CHIFFRES-->
-        <section id="ouest-counter" class="ouest-bg-section" style="background-color:#0061A8; background-attachment: fixed;">
+        <section id="ouest-counter" class="ouest-bg-section" style="background-color:#fafafa; background-attachment: fixed;">
             <div class="container">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="ouest-hero-wrap">
                       <div class="ouest-hero-intro text-center to-animate counter-animate">
+                          <div class="col-md-4 text-center">
+                              <span class="ouest-counter js-counter" data-from="0" data-to="35" data-speed="5000" data-refresh-interval="50">35</span>
+                              <span class="ouest-counter-label">Effectifs à la fin 2015</span>
+                          </div>
                         <div class="col-md-4 text-center">
-                          <span class="ouest-counter-label">Entreprise créée en</span>
-                          <span class="ouest-counter js-counter" data-from="0" data-to="2012" data-speed="5000" data-refresh-interval="50">2012</span>
-                        </div>
-                        <div class="col-md-4 text-center">
-                          <span class="ouest-counter-label">Effectifs à la fin 2015</span>
-                          <span class="ouest-counter js-counter" data-from="0" data-to="35" data-speed="5000" data-refresh-interval="50">35</span>
-                        </div>
-                        <div class="col-md-4 text-center">
+                          <span class="ouest-counter js-counter" data-from="0" data-to="7500000" data-speed="5000" data-refresh-interval="50">7,5<sub>M€</sub></span>
                           <span class="ouest-counter-label">Chiffre d'affaires 2015</span>
-                          <span class="ouest-counter js-counter" data-from="0" data-to="7500000" data-speed="5000" data-refresh-interval="50">7,5M€</span>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <span class="ouest-counter js-counter" data-from="0" data-to="2012" data-speed="5000" data-refresh-interval="50">2012</span>
+                            <span class="ouest-counter-label">Année de création</span>
                         </div>
                       </div>
                     </div>
@@ -183,18 +197,27 @@
         <!--/.CHIFFRES END-->
 
         <div class="nos-innovations">
-            <div class="col-md-6 col-sm-12">
-                <h2>Nos <br>innovations.</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12">
+                        <h2>Nos innovations<span class="blue-dot">.</span></h2>
 
-                <p>Afin de vous proposer des <br>prestations de qualité nous <br>investissons dans du matériel à la <br>pointe de la technologie.</p>
+                        <hr>
 
-                <a href="#" class="btn">Découvrir</a>
+                        <p>Afin de vous proposer des prestations de <br>qualité nous investissons dans du matériel à <br>la pointe de la technologie.</p>
+
+                        <a href="#" class="btn">Découvrir</a>
+                    </div>
+                    <div class="col-md-offset-1 col-md-6">
+                        <img src="images/home/desktop/nos-innovations.jpg" alt="Nos innovations">
+                    </div>
+                </div>
             </div>
         </div>
 
         <footer>
             <div class="col-md-8">
-                ©2016 Ouest TP |  Les Vignes Chasles 35120 Roz Landrieux | 02 99 80 69 61
+                ©2016 Ouest TP &nbsp;|&nbsp;  Les Vignes Chasles 35120 Roz Landrieux &nbsp;|&nbsp; 02 99 80 69 61
             </div>
 
             <div class="col-md-4">
