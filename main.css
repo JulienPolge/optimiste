@@ -178,7 +178,7 @@ p {
     margin-bottom: 20px;
 }
 
-.btn:hover {
+.btn:hover, .nos-metiers .btn:hover {
     background-color: #0061a8;
     color: #ffffff;
 }
@@ -499,12 +499,12 @@ hr {
     margin-bottom: 40px;
 }
 
-.light-background {
+.nos-metiers {
     background-color: #fafafa;
     position: relative;
 }
 
-.light-background:after {
+.nos-metiers:after {
     content: '';
     background-color: #979797;
     width: 100%;
@@ -514,7 +514,64 @@ hr {
     opacity: 0.34;
 }
 
+.nos-metiers .btn {
+    background-color: #fafafa;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1199px) {
+    .nos-metiers .btn {
+        margin-top: 17px;
+    }
+
+    .nos-chantiers:after {
+        bottom: 200px;
+    }
+
+    .nos-innovations:after {
+        bottom: 154px;
+    }
+}
+
 @media (max-width: 992px) {
+    header .logo {
+        margin-left: 0;
+    }
+
+    header ul {
+        padding-right: 0;
+        text-align: right;
+    }
+
+    footer > div:first-of-type {
+        text-align: left;
+        padding: 30px;
+        height: auto;
+        background-color: #c31431;
+    }
+
+    footer > div:first-of-type > * {
+        display: block;
+    }
+
+    footer > div:first-of-type > img {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    footer > div:first-of-type > a {
+        line-height: 40px;
+    }
+
+    footer > div:last-of-type {
+        text-align: left;
+        padding: 30px;
+        height: auto;
+        line-height: 24px;
+        background-color: #a31930;
+    }
+
     .nos-chantiers .col-md-6 {
         padding-left: 320px;
     }
@@ -522,11 +579,91 @@ hr {
     .nos-innovations > div {
         padding-left: 40px;
     }
+
+    .nos-chantiers {
+        min-height: 420px;
+    }
+
+    .nos-chantiers:after {
+        bottom: 81px;
+    }
+
+    .nos-chantiers img {
+        width: 350px;
+    }
+
+    .nos-chantiers h2 {
+        margin-top: 10px;
+    }
+
+    .nos-innovations {
+        min-height: 480px;
+    }
+
+    .nos-innovations:after {
+        bottom: 95px;
+    }
+
+    .nos-innovations img {
+        width: 350px;
+    }
+
+    .nos-innovations h2 {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 767px) {
+    .hamburger-menu {
+        font-size: 36px;
+    }
+
+    .hamburger-menu-button {
+        float: right;
+    }
+
+    .hamburger-menu a,
+    .hamburger-menu a:hover {
+        color: #50585e;
+        line-height: 65px;
+    }
+
+    .hamburger-menu a:hover,
+    .hamburger-menu a:active,
+    .hamburger-menu a:focus,
+    .hamburger-menu a:visited {
+        text-decoration: none;
+    }
+
+    #hamburger-menu-list {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #hamburger-menu-list li {
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-left: 20px;
+        font-size: 14px;
+        text-align: center;
+        list-style: none;
+        display: block;
+        margin-left: 0;
+    }
+
+    header .logo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #home {
+        padding-left: 31px;
+        padding-top: 110px;
+        height: 500px;
+    }
+
     .cover {
-        height: 490px;
+        height: auto;
         background-position: 40% 0%;
     }
 
@@ -539,8 +676,55 @@ hr {
         line-height: 50px;
     }
 
-    h2 {
-        margin-top: 0;
+    .cover .play {
+        font-size: 15px;
+        margin-top: 30px;
+        display: inline-block;
+    }
+
+    h2,
+    .nos-chantiers h2,
+    .nos-innovations h2 {
+        margin-top: 49px;
+        font-size: 30px;
+    }
+
+    h2 span {
+        color: rgb(39, 51, 57)!important;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .btn {
+        line-height: 40px;
+        font-size: 15px;
+        padding: 0 30px;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+    .nos-metiers:after,
+    .nos-chantiers:after,
+    .nos-innovations:after {
+        display: none;
+    }
+
+    .nos-metiers .col-xs-12 {
+        padding: 0 60px;
+    }
+
+    .nos-metiers p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .nos-chantiers-bg {
+        background: url(images/home/mobile/nos-chantiers.jpg);
+        height: 200px;
+        background-size: cover;
     }
 
     .nos-chantiers .col-sm-12 {
@@ -548,31 +732,52 @@ hr {
     }
 
     .nos-chantiers {
-        background-size: auto 330px;
-        background-position-y: 0;
-        background-position-x: 50%;
-        padding-top: 140px;
+        padding-top: 0;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .nos-chantiers .col-xs-12 {
+        padding: 0 60px;
+    }
+
+    .ouest-hero-wrap {
+        margin: 0;
+        padding: 0;
+    }
+
+    .ouest-hero-wrap .col-sm-4 {
+        margin-bottom: 50px;
+    }
+
+    .ouest-hero-wrap .col-sm-4:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .ouest-counter {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .ouest-counter-label {
+        font-size: 15px;
     }
 
     .nos-innovations {
-        background-position: 50% 0;
-        background-size: auto 330px;
-        padding-top: 240px;
+        padding-top: 0;
+        margin-top: 0;
+        text-align: left;
+        padding-bottom: 30px;
     }
 
-    .nos-innovations > div,
-    .nos-chantiers > div {
-        padding-left: 30px;
-        text-align: center;
+    .nos-innovations-bg {
+        background: url(images/home/mobile/nos-innovations.jpg);
+        height: 200px;
+        background-size: cover;
     }
 
-    .nos-innovations h2,
-    .nos-chantiers h2 {
-        margin-top: 100px;
-    }
-
-    .cover .play {
-        padding-left: 0;
+    .nos-innovations .col-xs-12 {
+        padding: 0 60px;
     }
 
     .key-numbers .col-xs-12 {

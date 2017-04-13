@@ -18,10 +18,20 @@
         <header>
           <section class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div>
-                <div class="col-md-2 col-sm-12">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 hamburger-menu">
                     <a href="index.html"><img src="images/home/desktop/logo-ouest-tp.png" alt="Ouest TP Logo" class="logo" /></a>
+
+                    <a class="hamburger-menu-button visible-xs" href="#" onclick="toggle_menu()">&#9776;</a>
+
+                    <ul id="hamburger-menu-list" style="display: none;">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specialites.html">Spécialités</a></li>
+                        <li><a href="chantiers.html">Chantiers</a></li>
+                        <li><a href="environnement.html">Environnement</a></li>
+                        <li><a href="entreprise.html">Entreprise</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-10 col-sm-12">
+                <div class="col-lg-10 col-md-10 col-sm-10 hidden-xs">
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="specialites.html">Spécialités</a></li>
@@ -35,13 +45,13 @@
 
           <section id="home" class="parallax-section">
             <div class="cover">
-                <div class="col-md-12">
+                <div class="col-lg-12">
                     <h1>
                         Notre expertise <br>
                         au service de vos réseaux<span class="blue-dot">.</span>
                     </h1>
                 </div>
-                <div class="col-md-12">
+                <div class="col-lg-12">
                     <span class="play" onclick="play_video()">
                         Lire la vidéo
                     </span>
@@ -55,10 +65,10 @@
           </section>
         </header>
 
-        <div class="light-background">
+        <div class="nos-metiers">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-4 col-xs-12">
                         <h2>Nos Métiers<span class="blue-dot">.</span></h2>
 
                         <hr>
@@ -66,14 +76,14 @@
                         <p>Située en Bretagne, <strong>OUEST TP</strong> travaille pour améliorer les réseaux d’assainissement et d’eau potable. Nous réalisons aussi des chantiers de terrassement et des travaux sans tranchée.
                         <br><br>Des métiers complémentaires pour répondre à tous vos besoins.</p>
 
-                        <p>
+                        <p class="hidden-xs">
                             <a href="specialites.html" class="btn">En Savoir Plus</a>
                         </p>
                     </div>
 
-                    <div class="col-md-6 cards">
+                    <div class="col-lg-6 col-md-8 cards">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="card">
                                     <img src="images/home/desktop/assainissement-miniature.jpg" alt="assainissement" />
 
@@ -83,7 +93,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="card">
                                     <img src="images/home/desktop/eaupotable-miniature.jpg" alt="eau potable" />
 
@@ -93,7 +103,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="card">
                                     <img src="images/home/desktop/terrassement-miniature.jpg" alt="terrassements" />
 
@@ -103,7 +113,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="card">
                                     <img src="images/home/desktop/tranchee-miniature.jpg" alt="travaux sans tranchée" />
 
@@ -112,6 +122,12 @@
                                     <img src="images/home/desktop/grey_arrow.svg" class="arrow">
                                 </div>
                             </div>
+
+                            <div class="col-xs-12">
+                                <p class="visible-xs">
+                                    <a href="specialites.html" class="btn">En Savoir Plus</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,13 +135,16 @@
         </div>
 
         <div class="nos-chantiers">
+            <div class="nos-chantiers-bg visible-xs">
+            </div>
+
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-lg-7 col-md-8 col-sm-7 hidden-xs">
                         <img src="images/home/desktop/nos-chantiers.jpg" alt="Nos chantiers">
                     </div>
 
-                    <div class="col-md-offset-1 col-md-4 col-sm-12">
+                    <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-5 col-xs-12">
                         <h2>Nos chantiers<span class="blue-dot">.</span></h2>
 
                         <hr>
@@ -139,7 +158,7 @@
         </div>
 
 <!--        <div class="key-numbers">
-            <div class="col-md-offset-3 col-md-2 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-12">
+            <div class="col-lg-offset-3 col-lg-2 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-12">
                 <div>
                     <div>
                         <h4>Effectifs <br>à fin 2015</h4>
@@ -149,7 +168,7 @@
                 <div class="separator hidden-sm hidden-xs"></div>
             </div>
 
-            <div class="col-md-2 col-sm-4 col-xs-12">
+            <div class="col-lg-2 col-sm-4 col-xs-12">
                 <div>
                     <div>
                         <h4>Chiffre <br>d’affaires 2015</h4>
@@ -159,7 +178,7 @@
                 <div class="separator hidden-sm hidden-xs"></div>
             </div>
 
-            <div class="col-md-2 col-sm-4 col-xs-12">
+            <div class="col-lg-2 col-sm-4 col-xs-12">
                 <div>
                     <div>
                         <h4>Entreprise <br>créée en</h4>
@@ -173,18 +192,18 @@
         <section id="ouest-counter" class="ouest-bg-section" style="background-color:#fafafa; background-attachment: fixed;">
             <div class="container">
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-lg-12 col-md-12">
                     <div class="ouest-hero-wrap">
                       <div class="ouest-hero-intro text-center to-animate counter-animate">
-                          <div class="col-md-4 text-center">
+                          <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                               <span class="ouest-counter js-counter" data-from="0" data-to="35" data-speed="5000" data-refresh-interval="50">35</span>
                               <span class="ouest-counter-label">Effectifs à la fin 2015</span>
                           </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                           <span class="ouest-counter js-counter" data-from="0" data-to="7500000" data-speed="5000" data-refresh-interval="50">7,5<sub>M€</sub></span>
                           <span class="ouest-counter-label">Chiffre d'affaires 2015</span>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                             <span class="ouest-counter js-counter" data-from="0" data-to="2012" data-speed="5000" data-refresh-interval="50">2012</span>
                             <span class="ouest-counter-label">Année de création</span>
                         </div>
@@ -197,9 +216,11 @@
         <!--/.CHIFFRES END-->
 
         <div class="nos-innovations">
+            <div class="nos-innovations-bg visible-xs"></div>
+
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-sm-12">
+                    <div class="col-lg-5 col-md-4 col-sm-5 col-xs-12">
                         <h2>Nos innovations<span class="blue-dot">.</span></h2>
 
                         <hr>
@@ -208,7 +229,7 @@
 
                         <a href="#" class="btn">Découvrir</a>
                     </div>
-                    <div class="col-md-offset-1 col-md-6">
+                    <div class="col-lg-offset-1 col-lg-6 col-md-7 col-sm-offset-1 col-sm-6 hidden-xs">
                         <img src="images/home/desktop/nos-innovations.jpg" alt="Nos innovations">
                     </div>
                 </div>
@@ -216,12 +237,20 @@
         </div>
 
         <footer>
-            <div class="col-md-8">
-                ©2016 Ouest TP &nbsp;|&nbsp;  Les Vignes Chasles 35120 Roz Landrieux &nbsp;|&nbsp; 02 99 80 69 61
+            <div class="col-lg-4 col-md-4 col-md-push-8 col-sm-12">
+              <img src="images/home/contact-icon.svg" alt="contact" /> <a  style="color:#fff;" href="mailto:f.lutinier@ouesttp.fr"> Envoyez nous un message!</a>
             </div>
 
-            <div class="col-md-4">
-              <img src="images/home/contact-icon.svg" alt="contact" /> <a  style="color:#fff;" href="mailto:f.lutinier@ouesttp.fr"> Envoyez nous un message!</a>
+            <div class="col-lg-8 col-md-8 col-md-pull-4 col-sm-12">
+                ©2016 Ouest TP
+                <br class="visible-sm visible-xs">
+                <span class="hidden-sm hidden-xs">&nbsp;|&nbsp;</span>
+                Les Vignes Chasles
+                <br class="visible-sm visible-xs">
+                35120 Roz Landrieux
+                <br class="visible-sm visible-xs">
+                <span class="hidden-sm hidden-xs">&nbsp;|&nbsp;</span>
+                02 99 80 69 61
             </div>
         </footer>
 
@@ -239,6 +268,15 @@
                 var iframe = document.getElementById('video-iframe');
                 var player = new Vimeo.Player(iframe);
                 player.pause();
+            }
+
+            function toggle_menu() {
+                var menu_expanded = document.getElementById('hamburger-menu-list').style.display === 'block';
+                if (menu_expanded) {
+                    document.getElementById('hamburger-menu-list').style.display = 'none';
+                } else {
+                    document.getElementById('hamburger-menu-list').style.display = 'block';
+                }
             }
         </script>
     </body>
