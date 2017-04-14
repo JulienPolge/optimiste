@@ -1,7 +1,16 @@
 /*Specialités*/
 
+* {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: normal;
+}
+
+.blue-dot {
+    color: #0061a8;
+}
+
 #specialites {
-  background: url(images/specialites/header-background.jpg) 50% 0 repeat-y fixed;
+  background: url(images/specialites/desktop/header-background.jpg) 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -14,27 +23,44 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vh;
+  height: 70vh;
+  position: relative;
 }
 
 #specialites h1,
 #specialites h4 {
-    padding-left: 190px;
+    padding-left: 165px;
+}
+
+.arrow {
+    width: 75px;
+    height: 75px;
+    background-color: #0061a8;
+    border-radius: 50%;
+    padding: 26px;
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.image-card {
+    border-radius: 10px;
 }
 
 h1 {
-    font-family: Raleway;
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
 	text-align: left;
 	color: #ffffff;
-    margin-top: 250px;
+    margin-top: 100px;
+    line-height: 52px;
 }
 
 h4 {
-    font-family: Raleway;
 	font-size: 20px;
 	font-weight: normal;
 	font-style: normal;
@@ -51,24 +77,41 @@ h4 {
 
 
 .specialite {
-  padding-top:50px;
-  padding-bottom:70px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size:16px;
-  color:#324147;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-left: 80px;
+    padding-right: 0;
+    font-size: 18px;
+    color: rgb(50, 65, 71);
+    list-style: none;
+}
 
+.left-specialite {
+    padding-left: 0;
+    padding-right: 90px;
+    padding-top: 180px;
+}
+
+.specialite-sans-tranchee {
+    padding-top: 290px;
 }
 
 .specialite li {
   padding-top: 20px;
   list-style: none;
+  position: relative;
+  padding-left: 20px;
 }
 
-.specialite li::before {
-  content: "•"; color: #0061a8;
-  padding:10px;
+.specialite li:before {
+    content: "•";
+    font-size: 120%;
+    padding-right: 5px;
+    color: #0061a8;
+    padding: 10px;
+    position: absolute;
+    left: -12px;
+    top: 7px;
 }
 
 .info{
@@ -78,8 +121,16 @@ h4 {
 .container{
   margin-bottom: 100px;
   margin-top:100px;
-  display: flex;
-  align-items: center;
+}
+
+hr {
+    width: 50px;
+	height: 6px;
+	background-color: #0061a8;
+    margin-left: 0;
+    margin-bottom: 40px;
+    display: block;
+    text-align: left;
 }
 
 h2 {
@@ -103,18 +154,125 @@ h2 {
   padding-left:190px;
 }
 
-.img-assainissement{
-  background-image: url(images/specialites/photo-1.png);
+footer {
+    color: #ffffff;
+    height: 90px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: center;
 }
 
-.img-eau{
-  background: url(images/specialites/photo-2.png) 50% 0 repeat-y fixed;
+footer div {
+    height: 100%;
 }
 
-.img-tranchee{
-  background-image: url(images/specialites/photo-3.png);
+footer div:first-of-type {
+    background-color: #a31930;
+    text-align: left;
+    padding-left: 100px;
 }
 
-.img-terrassement{
-  background-image: url(images/specialites/photo-4.png);
+footer div:last-of-type {
+    background-color: #c31431;
+}
+
+footer div:last-of-type img {
+    margin-right: 20px;
+}
+
+/* md */
+@media (max-width: 1199px) {
+    .image-card {
+        width: 100%;
+    }
+}
+
+/* sm */
+@media (max-width: 992px) {
+    .image-card {
+        width: 100%;
+    }
+
+    .specialite {
+        padding-left: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .left-specialite {
+        padding-right: 20px;
+    }
+
+    footer > div:first-of-type {
+        text-align: left;
+        padding: 30px;
+        height: auto;
+        background-color: #c31431;
+    }
+
+    footer > div:first-of-type > * {
+        display: block;
+    }
+
+    footer > div:first-of-type > img {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    footer > div:first-of-type > a {
+        line-height: 40px;
+    }
+
+    footer > div:last-of-type {
+        text-align: left;
+        padding: 30px;
+        height: auto;
+        line-height: 24px;
+        background-color: #a31930;
+    }
+}
+
+/* xs */
+@media (max-width: 767px) {
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    #specialites .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #specialites h1 {
+        padding-left: 30px;
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .image-card {
+        display: none;
+    }
+
+    .specialite,
+    .left-specialite {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .specialite li {
+        font-size: 15px;
+    }
+
+    .image-banner {
+        width: 100%;
+    }
+
+    .decouvrir-realisations {
+        margin-top: 45px;
+    }
 }

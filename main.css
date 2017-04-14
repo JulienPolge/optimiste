@@ -497,6 +497,8 @@ hr {
 	background-color: #0061a8;
     margin-left: 0;
     margin-bottom: 40px;
+    display: block;
+    text-align: left;
 }
 
 .nos-metiers {

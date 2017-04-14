@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
-        
+
         <link rel="stylesheet" href="main.css" media="screen">
         <link rel="stylesheet" href="specialites.css" media="screen">
 
@@ -19,46 +19,65 @@
     <body>
         <header>
           <section class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div>
-                <div class="col-md-2 col-sm-12">
-                    <a href="index.html"><img src="images/home/logo-ouesttp.png" alt="Ouest TP Logo" class="logo" /></a>
-                </div>
-                <div class="col-md-10 col-sm-12">
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="specialites.html">Spécialités</a></li>
-                        <li><a href="chantiers.html">Chantiers</a></li>
-                        <li><a href="environnement.html">Environnement</a></li>
-                        <li><a href="entreprise.html">Entreprise</a></li>
-                    </ul>
-                </div>
-          </div>
+              <div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 hamburger-menu">
+                      <a href="index.html"><img src="images/home/desktop/logo-ouest-tp.png" alt="Ouest TP Logo" class="logo" /></a>
+
+                      <a class="hamburger-menu-button visible-xs" href="#" onclick="toggle_menu()">&#9776;</a>
+
+                      <ul id="hamburger-menu-list" style="display: none;">
+                          <li><a href="index.html">Accueil</a></li>
+                          <li><a href="specialites.html" style="color: rgb(0, 97, 168);">Spécialités</a></li>
+                          <li><a href="chantiers.html">Chantiers</a></li>
+                          <li><a href="environnement.html">Environnement</a></li>
+                          <li><a href="entreprise.html">Entreprise</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 hidden-xs">
+                      <ul>
+                          <li><a href="index.html">Accueil</a></li>
+                          <li><a href="specialites.html" style="color: rgb(0, 97, 168);">Spécialités</a></li>
+                          <li><a href="chantiers.html">Chantiers</a></li>
+                          <li><a href="environnement.html">Environnement</a></li>
+                          <li><a href="entreprise.html">Entreprise</a></li>
+                      </ul>
+                  </div>
+              </div>
           </section>
         </header>
 
 
-            <section id="specialites" class="parallax-section">
+        <section id="specialites" class="parallax-section">
             <div class="cover-spe">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h1>Spécialités.</h1>
-
-                            <h4>Des métiers complémentaires pour répondre à tous vos besoins.</h4>
+                        <div class="col-lg-12">
+                            <h1>Des métiers complémentaires <br>pour répondre à tous vos besoins<span class="blue-dot">.</span></h1>
                         </div>
                     </div>
                 </div>
             </div>
-          </section>
+            <div class="arrow">
+                <img src="images/specialites/desktop/icon-arrow.svg" alt="En voir plus">
+            </div>
+        </section>
 
         <div class="container">
-            <div class="info col-md-4">
-                <h2 class="text-left">Assainissement.</h2>
+            <div class="info col-lg-6 col-md-6 col-sm-6">
+                <h2 class="text-left">Assainissement<span class="blue-dot">.</span></h2>
 
-                <p class="text-left">Spécialisée dans la pose de canalisations de réseaux d’assainissement des eaux usées et des eaux pluviales, OUEST TP vous apportera des solutions complètes et adaptées à vos projets d'extension, renouvellement, modernisation ou maintenance de réseaux.</p>
+                <hr>
+
+                <div class="row">
+                    <div class="col-lg-10">
+                        <p class="text-left">Spécialisée dans la pose de canalisations de réseaux d’assainissement des eaux usées et des eaux pluviales, OUEST TP vous apportera des solutions complètes et adaptées à vos projets d'extension, renouvellement, modernisation ou maintenance de réseaux.</p>
+                    </div>
+                </div>
+
+                <img src="images/specialites/desktop/assainissement.jpg" class="image-card" alt="assainissement">
             </div>
 
-            <div class="col-md-offset-2 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
               <ul class="specialite">
 
                   <li>Génie Civil associé.</li>
@@ -83,13 +102,22 @@
             </div>
         </div>
 
-        <section id="sub" class="img-assainissement parallax-section">
-      </section>
+        <img src="images/specialites/mobile/assainissement.jpg" class="image-banner visible-xs" alt="assainissement">
 
         <div class="container">
+            <div class="info col-lg-6 col-md-6 col-sm-6 col-sm-push-6">
+                <h2 class="text-left">Eau Potable<span class="blue-dot">.</span></h2>
 
-            <div class="col-md-6">
-              <ul class="specialite">
+                <hr>
+
+                <p class="text-left">Pour assurer l’alimentation en eau potable, nos équipes spécialisées sont en mesure de répondre à des projets variés de manière efficiente.
+<br>Nous intervenons en milieux urbains et zones rurales sur divers travaux.</p>
+
+                <img src="images/specialites/desktop/eau-potable.jpg" class="image-card" alt="eau potable">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-sm-pull-6">
+              <ul class="specialite left-specialite">
 
                   <li>Extension, renforcement et renouvellement de réseaux canalisations et branchements.</li>
 
@@ -108,30 +136,24 @@
                   <li>Défense incendie en bâches souples ou acier spiralés.</li>
 
             </div>
-
-            <div class="info col-md-offset-1 col-md-4">
-                <h2 class="text-left">Eau Potable.</h2>
-
-                <p class="text-left">Pour assurer l’alimentation en eau potable, nos équipes spécialisées sont en mesure de répondre à des projets variés de manière efficiente.
-Nous intervenons en milieux urbains et zones rurales sur divers travaux.</p>
-            </div>
-
         </div>
 
-        <section id="sub" class="img-eau parallax-section">
-      </section>
+        <img src="images/specialites/mobile/eau-potable.jpg" class="image-banner visible-xs" alt="eau potable">
 
         <div class="container">
 
-          <div class="info col-md-4">
-              <h2 class="text-left">Travaux
-          sans tranchée.</h2>
+          <div class="info col-lg-6 col-md-6 col-sm-6">
+              <h2 class="text-left">Travaux<br>sans tranchée<span class="blue-dot">.</span></h2>
 
-              <p class="text-left">En France seulement 3% des travaux de canalisation se font en utilisant la technique du « sans tranchées ». Ouest TP, grâce à son personnel qualifié proposent des solutions sans tranchée, modernes et économiques, qui atténuent les nuisances des chantiers. En plus d’être une démarche innovante, c’est une vraie démarche environnementale.</p>
+              <hr>
+
+              <p class="text-left">En France seulement 3% des travaux de canalisation se font en utilisant la technique du « sans tranchées ».<br>Ouest TP, grâce à son personnel qualifié proposent des solutions sans tranchée, modernes et économiques, qui atténuent les nuisances des chantiers. En plus d’être une démarche innovante, c’est une vraie démarche environnementale.</p>
+
+              <img src="images/specialites/desktop/sans-tranchee.jpg" class="image-card" alt="travaux sans tranchée">
           </div>
 
-            <div class="col-md-offset-2 col-md-6">
-              <ul class="specialite">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <ul class="specialite specialite-sans-tranchee">
 
                   <li>Réhabilitation de réseau d’alimentation en eau potable, de canalisation principale par la technique de l’éclatement.</li>
 
@@ -147,13 +169,21 @@ Nous intervenons en milieux urbains et zones rurales sur divers travaux.</p>
 
         </div>
 
-        <section id="sub" class="img-tranchee parallax-section">
-      </section>
+        <img src="images/specialites/mobile/sans-tranchee.jpg" class="image-banner visible-xs" alt="travaux sans tranchée">
 
         <div class="container">
+            <div class="info col-lg-6 col-md-6 col-sm-6 col-sm-push-6">
+                <h2 class="text-left">Terrassements<span class="blue-dot">.</span></h2>
 
-            <div class="col-md-6">
-              <ul class="specialite">
+                <hr>
+
+                <p class="text-left">OUEST TP répond de manière adaptée à tous vos besoins de terrassements. Notre équipe spécialisée et nos moyens matériels vous accompagnerons dans l’aménagement, la création ou la modification de terrains.</p>
+
+                <img src="images/specialites/desktop/terrassement.jpg" class="image-card" alt="terrassement">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-sm-pull-6">
+              <ul class="specialite left-specialite">
 
                 <li>Terrassement de routes départementales et nationales</li>
 
@@ -168,28 +198,41 @@ Nous intervenons en milieux urbains et zones rurales sur divers travaux.</p>
                 <li>Plateforme de logistique</li>
 
             </div>
-
-            <div class="info col-md-offset-1 col-md-4">
-                <h2 class="text-left">Terrassements.</h2>
-
-                <p class="text-left">OUEST TP répond de manière adaptée à tous vos besoins de terrassements. Notre équipe spécialisée et nos moyens matériels vous accompagnerons dans l’aménagement, la création ou la modification de terrains.</p>
-            </div>
-
         </div>
 
-        <section id="sub" class="img-terrassement parallax-section">
-      </section>
+        <img src="images/specialites/mobile/terrassement.jpg" class="image-banner visible-xs" alt="terrassement">
 
+        <p class="text-center decouvrir-realisations">
+            <a href="specialites.html" class="btn">Découvrir nos réalisations</a>
+        </p>
 
         <footer>
-            <div class="col-md-8">
-                ©2016 Ouest TP |  Les Vignes Chasles 35120 Roz Landrieux | 02 99 80 69 61
+            <div class="col-lg-4 col-md-4 col-md-push-8 col-sm-12">
+              <img src="images/home/contact-icon.svg" alt="contact" /> <a  style="color:#fff;" href="mailto:f.lutinier@ouesttp.fr"> Envoyez nous un message!</a>
             </div>
 
-            <div class="col-md-4">
-              <img src="images/home/contact-icon.svg" alt="contact" /> <a  style="color:#fff;" href="mailto:f.lutinier@ouesttp.fr"> Envoyez nous un message!</a>
+            <div class="col-lg-8 col-md-8 col-md-pull-4 col-sm-12">
+                ©2016 Ouest TP
+                <br class="visible-sm visible-xs">
+                <span class="hidden-sm hidden-xs">&nbsp;|&nbsp;</span>
+                Les Vignes Chasles
+                <br class="visible-sm visible-xs">
+                35120 Roz Landrieux
+                <br class="visible-sm visible-xs">
+                <span class="hidden-sm hidden-xs">&nbsp;|&nbsp;</span>
+                02 99 80 69 61
             </div>
         </footer>
 
+        <script type="text/javascript">
+            function toggle_menu() {
+                var menu_expanded = document.getElementById('hamburger-menu-list').style.display === 'block';
+                if (menu_expanded) {
+                    document.getElementById('hamburger-menu-list').style.display = 'none';
+                } else {
+                    document.getElementById('hamburger-menu-list').style.display = 'block';
+                }
+            }
+        </script>
     </body>
 </html>
