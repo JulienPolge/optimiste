@@ -25,7 +25,7 @@
   position: relative;
 }
 
-#env h1 {
+h1 {
     padding-left: 160px;
 }
 
@@ -86,7 +86,7 @@ p {
 }
 
 .logos img {
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .row {
@@ -102,5 +102,31 @@ p {
 
     p {
         padding-right: 20px;
+    }
+}
+
+/* xs */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 50px;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .col-xs-12 {
+        padding: 0 60px;
+    }
+
+    .image-banner {
+        width: 100%;
+    }
+
+    h2 span.blue-dot {
+        color: #0061a8!important;
     }
 }
