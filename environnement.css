@@ -1,5 +1,14 @@
+* {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: normal;
+}
+
+.blue-dot {
+    color: #0061a8;
+}
+
 #env {
-  background: url(images/environnement/header-background.jpg) 50% 0 repeat-y fixed;
+  background: url(images/environnement/desktop/header-background.jpg) 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -13,54 +22,35 @@
       -ms-flex-align: center;
           align-items: center;
   height: 60vh;
+  position: relative;
 }
 
-#env h1, #env h2 {
-    padding-left: 190px;
+#env h1 {
+    padding-left: 160px;
 }
 
-.container {
-    margin-top: 0;
-}
-
-.full-width {
-    width: 100%;
-}
-
-.col-md-6 {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.col-md-6.col-img {
-    padding: 0;
-    overflow: hidden;
-}
-
-.col-md-6 img {
-    height: 750px;
+.arrow {
+    width: 75px;
+    height: 75px;
+    background-color: #0061a8;
+    border-radius: 50%;
+    padding: 26px;
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1000;
 }
 
 h1 {
-    font-family: Raleway;
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
 	text-align: left;
 	color: #ffffff;
-    margin-top: 250px;
-}
-
-h2 {
-    font-family: Raleway;
-	font-size: 20px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 200px;
+    margin-top: 110px;
 }
 
 h3 {
@@ -75,11 +65,42 @@ h3 {
     margin-top: 120px;
 }
 
+.image-card {
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
 p {
-    font-family: Lato;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
 	color: rgba(0, 0, 0, 0.7);
+    padding-right: 150px;
+}
+
+.logos {
+    padding-right: 0;
+}
+
+.logos img {
+    margin: 0 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+/* sm */
+@media (max-width: 992px) {
+    .image-card {
+        width: 100%;
+    }
+
+    p {
+        padding-right: 20px;
+    }
 }
