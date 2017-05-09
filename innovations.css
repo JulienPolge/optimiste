@@ -1,0 +1,132 @@
+* {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: normal;
+}
+
+.blue-dot {
+    color: #0061a8;
+}
+
+#innovations {
+  background: url(images/innovations/header-image.png) 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+  position: relative;
+}
+
+h1 {
+    padding-left: 160px;
+}
+
+.arrow {
+    width: 75px;
+    height: 75px;
+    background-color: #0061a8;
+    border-radius: 50%;
+    padding: 26px;
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: left;
+	color: #ffffff;
+    margin-top: 110px;
+}
+
+h3 {
+    font-family: Lato;
+	font-size: 50px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: left;
+	color: #0061a8;
+    margin-bottom: 50px;
+    margin-top: 120px;
+}
+
+.image-card {
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+p {
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	color: rgba(0, 0, 0, 0.7);
+    padding-right: 150px;
+}
+
+.logos {
+    padding-right: 0;
+}
+
+.logos img {
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+/* sm */
+@media (max-width: 992px) {
+    .image-card {
+        width: 100%;
+    }
+
+    p {
+        padding-right: 20px;
+    }
+}
+
+/* xs */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 50px;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .col-xs-12 {
+        padding: 0 60px;
+    }
+
+    .image-banner {
+        width: 100%;
+    }
+
+    h2 span.blue-dot {
+        color: #0061a8!important;
+    }
+}
