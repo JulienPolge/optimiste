@@ -1,108 +1,179 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
 
-        <link rel="stylesheet" href="main.css" media="screen">
-        <link rel="stylesheet" href="fiche-chantier.css" media="screen">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="fiche-chantier.css" media="screen">
 
-        <link type="image/x-icon" href="images/favicon.png" rel="shortcut icon" />
+    <link type="image/x-icon" href="images/favicon.png" rel="shortcut icon" />
 
 
-        <title>Ouest TP</title>
-    </head>
-    <body>
-      <header>
+    <title>Ouest TP</title>
+</head>
+<body>
+    <header>
         <section class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div>
-              <div class="col-md-2 col-sm-12">
-                  <a href="index.html"><img src="images/home/logo-ouesttp.png" alt="Ouest TP Logo" class="logo" /></a>
-              </div>
-              <div class="col-md-10 col-sm-12">
-                  <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="specialites.html">Spécialités</a></li>
-                    <li><a href="chantier.html">Chantiers</a></li>
-                    <li><a href="environnement.html">Environnement</a></li>
-                    <li><a href="entreprise.html">Entreprise</a></li>
-                  </ul>
-              </div>
-        </div>
+            <div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 hamburger-menu">
+                    <a href="index.html"><img src="images/home/desktop/logo-ouest-tp.png" alt="Ouest TP Logo" class="logo" /></a>
+
+                    <a class="hamburger-menu-button visible-xs" href="#" onclick="toggle_menu()">&#9776;</a>
+
+                    <ul id="hamburger-menu-list" style="display: none;">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specialites.html">Spécialités</a></li>
+                        <li><a href="chantiers.html" style="color: rgb(0, 97, 168);">Chantiers</a></li>
+                        <li><a href="environnement.html">Environnement</a></li>
+                        <li><a href="entreprise.html">Entreprise</a></li>
+                        <li><a href="innovations.html">Innovations</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 hidden-xs">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specialites.html">Spécialités</a></li>
+                        <li><a href="chantiers.html" style="color: rgb(0, 97, 168);">Chantiers</a></li>
+                        <li><a href="environnement.html">Environnement</a></li>
+                        <li><a href="entreprise.html">Entreprise</a></li>
+                        <li><a href="innovations.html">Innovations</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-      </header>
+        <section id="fiche-chantier1" class="parallax-section fiche-chantier">
+            <div class="cover">
+                <div class="col-lg-12">
+                    <h1>
+                        Alimentation en eau potable
+                    </h1>
+                </div>
 
-<section id="chantier-infos"
+                <div class="bottom-cover">
+                    <h2>Lire la vidéo</h2>
+
+                    <div class="arrow">
+                        <img src="images/home/play-icon.svg" alt="Lire la vidéo" onclick="play_video()">
+                    </div>
+                </div>
+
+                <div id="main-video" style="display:none;">
+                    <a class="close-btn" onclick="close_video()">&times;</a>
+                    <iframe id="video-iframe" width="750" height="500" src="https://www.youtube.com/embed/gnoO7VI9ARk" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <section id="chantier-infos">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2>Alimentation en eau potable</h2>
-                    <hr>
-
-                    <p>Projet de doublement de la canalisation fonte Ø 350 réseau moyen service entre Plédeliac et Planguenoual (22)
-</p>
-
-                    <h4>Résumé du chantier</h4>
-
                     <dl>
-                        <dt>Maitre d'ouvrage</dt>
-                        <dd>Syndicat Mixte de l’Arguenon Penthièvre
-</dd>
+                        <dt>Intitulé.</dt>
+                        <dd>SIE de la Forêt du Theil (35), secteur de Janzé, création de la conduite d’adduction d’eau potable fonte Ø 250 du nouveau réservoir de 3000 m³ servant à alimenter les communes de Janzé, Amanlis, Brie et Corps Nuds</dd>
 
-                        <dt>Débuté</dt>
-                        <dd>Septembre 2016</dd>
+                        <dt>Maitre d'ouvrage.</dt>
+                        <dd>Syndicat Intercommunal des Eaux de la Forêt du Theil </dd>
 
-                        <dt>Réception</dt>
-                        <dd>Décembre 2016</dd>
+                        <dt>Débuté.</dt>
+                        <dd>Juillet 2016</dd>
 
-                        <dt>Montant HT des travaux</dt>
-                        <dd>960 000 €</dd>
+                        <dt>Réception.</dt>
+                        <dd>Novembre 2016</dd>
 
-                        <dt>Localisation</dt>
-                        <dd>Doublement de la canalisation se trouvant le long de la voie de chemin de fer entre Planguenoual et Pledeliac
-</dd>
+                        <dt>Montant HT des travaux.</dt>
+                        <dd>390 000 €</dd>
 
-                        <dt>Nature du réseau à réaliser</dt>
-                        <dd>Adduction d’Eau potable
-</dd>
+                        <dt>Localisation.</dt>
+                        <dd>La traversée de la partie urbaine de Janzé paraissant exclue de par la complexité des travaux qu’elle suppose, le choix d’un passage par le sud de l’agglomération de Janzé est apparu évident, en suivant le plus possible le fuseau de la RD41. </dd>
 
-                        <dt>Maitrise d'oeuvre</dt>
-                        <dd>Maitrise d’œuvre assurée en interne par le syndicat Mixte de l’Arguenon Penthièvre
-</dd>
-                        <dt>Spécificité du projet</dt>
-                        <dd>Réseau moyen service avec pression d’essai à 37 bars, fourniture et mise en œuvre de canalisation fonte Natural Universal à joint VI et VE pour le verrouillage
+                        <dt>Nature du réseau à réaliser.</dt>
+                        <dd>Adduction d’Eau potable </dd>
 
-</dd>
+                        <dt>Maitrise d'oeuvre.</dt>
+                        <dd>Safege agence de Saint Grégoire (35)</dd>
+
+                        <dt>Spécificité du projet.</dt>
+                        <dd>Passage en forage réalisé à la tarière avec fourreaux acier sous route départementales nombre 6 unités longueur 250 ml </dd>
                     </dl>
+
                 </div>
-                <div class="col-md-8">
-                    <div class="video-wrapper">
-                        <iframe width="750" height="500" src="https://www.youtube.com/embed/gnoO7VI9ARk" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                <div class="col-md-6 col-md-offset-2">
 
-                    <p class="description">Dédoublement de la canalisation à partir de la traversée sous RD 68 au lieu-dit « Les Noës Hercouet » sur la commune de Pledeliac et le nœud situé au lieu-dit « Les Noës » commune de Lamballe. Il a été réalisé la fourniture et pose de 4500 ml de fonte Natural Pont A Mousson C 30 et C 50 Ø 350 mm dont 50 ml en fonte TT Universal à joint VE, la fourniture et pose de 3 robinets vannes papillon PN 25, de 5 ventouses triples fonctions PN 25 et 8 vidanges DN 150.
+                    <p>La construction d’un nouveau château d’eau sur la commune de Janzé (35) a été programmée par le Syndicat des Eaux de la Forêt du Theil consécutivement à un Schéma Directeur réalisé en 2001, puis actualisé et complété par une étude de définition réalisée en 2012. Courant 2013, le syndicat a décidé de lancer un programme de travaux d’extension et de renouvellement de son réseau au titre des exercices 2013 et 2014 comprenant les interventions suivantes :</p>
 
-</p>
+                    <p>La création de la conduite d’adduction du nouveau
+                        château d’eau de 3 000 m 3 qui sera construit sur la
+                        commune de JANZE, destiné à desservir les communes
+                        de JANZE, AMANLIS, BRIE et CORPS-NUDS, en
+                        remplacement du château d’eau actuel de 600 m³</p>
+
+                    <p>La pose des équipements hydrauliques de régulation en
+                        réseau nécessaires à la mise en service du nouveau
+                        château d’eau.</p>
+
+                    <p>Pour la réalisation de ce chantier, l’entreprise OUEST TP a innovée en matière d’ouverture des tranchées. En effet, les travaux se situant majoritairement en accotement de voies départementales, en accotement de voies communales et à travers des parcelles agricoles, le choix de mettre en place une trancheuse à chaine montée sur une pelle à chenilles hydraulique de 35 T s’est imposé à nous. Cette technique validée par le maitre d’ouvrage et le maitre d’œuvre a permis d’optimiser le délai de réalisation des travaux et ainsi minimiser au maximum la gêne aux riverains par rapport à des moyens traditionnelles. </p>
 
                 </div>
             </div>
         </div>
-      </section>
+    </section>
 
-        <footer>
-            <div class="col-md-8">
-                ©2016 Ouest TP |  Les Vignes Chasles 35120 Roz Landrieux | 02 99 80 69 61
-            </div>
+    <div class="bottom-backgrounds">
+        <div class="bottom-background-left" style="background-image: url(images/chantiers/photo-chantier-6-1.jpg)"></div>
+        <div class="bottom-background-right" style="background-image: url(images/chantiers/photo-chantier-6-2.jpg)"></div>
+    </div>
 
-            <div class="col-md-4">
-              <img src="images/home/contact-icon.svg" alt="contact" /> <a  style="color:#fff;" href="mailto:f.lutinier@ouesttp.fr"> Envoyez nous un message!</a>
-            </div>
-        </footer>
+    <footer>
+        <div class="col-lg-4 col-md-4 col-md-push-8 col-sm-12">
+            <img src="images/home/contact-icon.svg" alt="contact" /> <a  style="color:#fff;" href="mailto:f.lutinier@ouesttp.fr"> Envoyez nous un message!</a>
+        </div>
 
-    </body>
+        <div class="col-lg-8 col-md-8 col-md-pull-4 col-sm-12">
+            ©2016 Ouest TP
+            <br class="visible-sm visible-xs">
+            <span class="hidden-sm hidden-xs">&nbsp;|&nbsp;</span>
+            Les Vignes Chasles
+            <br class="visible-sm visible-xs">
+            35120 Roz Landrieux
+            <br class="visible-sm visible-xs">
+            <span class="hidden-sm hidden-xs">&nbsp;|&nbsp;</span>
+            02 99 80 69 61
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+    function play_video() {
+        document.getElementById('main-video').style.display = 'block';
+        var iframe = document.getElementById('video-iframe');
+        var player = new Vimeo.Player(iframe);
+        player.play();
+    }
+
+    function close_video() {
+        document.getElementById('main-video').style.display = 'none';
+        var iframe = document.getElementById('video-iframe');
+        var player = new Vimeo.Player(iframe);
+        player.pause();
+    }
+
+    function toggle_menu() {
+        var menu_expanded = document.getElementById('hamburger-menu-list').style.display === 'block';
+        if (menu_expanded) {
+            document.getElementById('hamburger-menu-list').style.display = 'none';
+        } else {
+            document.getElementById('hamburger-menu-list').style.display = 'block';
+        }
+    }
+    </script>
+
+</body>
 </html>

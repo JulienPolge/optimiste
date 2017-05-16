@@ -19,20 +19,32 @@
     <body>
       <header>
         <section class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div>
-              <div class="col-md-2 col-sm-12">
-                  <a href="index.html"><img src="images/home/logo-ouesttp.png" alt="Ouest TP Logo" class="logo" /></a>
-              </div>
-              <div class="col-md-10 col-sm-12">
-                  <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="specialites.html">Spécialités</a></li>
-                    <li><a href="chantiers.html">Chantiers</a></li>
-                    <li><a href="environnement.html">Environnement</a></li>
-                    <li><a href="entreprise.html">Entreprise</a></li>
-                  </ul>
-              </div>
-        </div>
+            <div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 hamburger-menu">
+                    <a href="index.html"><img src="images/home/desktop/logo-ouest-tp.png" alt="Ouest TP Logo" class="logo" /></a>
+
+                    <a class="hamburger-menu-button visible-xs" href="#" onclick="toggle_menu()">&#9776;</a>
+
+                    <ul id="hamburger-menu-list" style="display: none;">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specialites.html">Spécialités</a></li>
+                        <li><a href="chantiers.html" style="color: rgb(0, 97, 168);">Chantiers</a></li>
+                        <li><a href="environnement.html">Environnement</a></li>
+                        <li><a href="entreprise.html">Entreprise</a></li>
+                        <li><a href="innovations.html">Innovations</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 hidden-xs">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="specialites.html">Spécialités</a></li>
+                        <li><a href="chantiers.html" style="color: rgb(0, 97, 168);">Chantiers</a></li>
+                        <li><a href="environnement.html">Environnement</a></li>
+                        <li><a href="entreprise.html">Entreprise</a></li>
+                        <li><a href="innovations.html">Innovations</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
       </header>
@@ -100,15 +112,34 @@ Fourniture et pose de canalisation d’eau potable Ø 75 mm PVC pression et la r
         </div>
       </section>
 
-        <footer>
-            <div class="col-md-8">
-                ©2016 Ouest TP |  Les Vignes Chasles 35120 Roz Landrieux | 02 99 80 69 61
-            </div>
+      <footer>
+          <div class="col-lg-4 col-md-4 col-md-push-8 col-sm-12">
+            <img src="images/home/contact-icon.svg" alt="contact" /> <a  style="color:#fff;" href="mailto:f.lutinier@ouesttp.fr"> Envoyez nous un message!</a>
+          </div>
 
-            <div class="col-md-4">
-              <img src="images/home/contact-icon.svg" alt="contact" /> <a  style="color:#fff;" href="mailto:f.lutinier@ouesttp.fr"> Envoyez nous un message!</a>
-            </div>
-        </footer>
+          <div class="col-lg-8 col-md-8 col-md-pull-4 col-sm-12">
+              ©2016 Ouest TP
+              <br class="visible-sm visible-xs">
+              <span class="hidden-sm hidden-xs">&nbsp;|&nbsp;</span>
+              Les Vignes Chasles
+              <br class="visible-sm visible-xs">
+              35120 Roz Landrieux
+              <br class="visible-sm visible-xs">
+              <span class="hidden-sm hidden-xs">&nbsp;|&nbsp;</span>
+              02 99 80 69 61
+          </div>
+      </footer>
+
+      <script type="text/javascript">
+          function toggle_menu() {
+              var menu_expanded = document.getElementById('hamburger-menu-list').style.display === 'block';
+              if (menu_expanded) {
+                  document.getElementById('hamburger-menu-list').style.display = 'none';
+              } else {
+                  document.getElementById('hamburger-menu-list').style.display = 'block';
+              }
+          }
+      </script>
 
     </body>
 </html>
