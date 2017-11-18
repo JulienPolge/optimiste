@@ -1,5 +1,5 @@
 #entreprise {
-  background: url(images/entreprise/header-page.png) 50% 0 repeat-y fixed;
+  background: url(images/entreprise/header-page.jpg) 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -96,7 +96,6 @@ p {
 
 
 .image-card {
-    border-radius: 10px;
     width: 90%;
     margin-top: 100px;
     margin-bottom: 50px;
