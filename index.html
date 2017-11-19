@@ -92,6 +92,7 @@
                                     <p>Assainissement &amp; Génie Civil</p>
 
                                     <img src="images/home/desktop/grey_arrow.svg" class="arrow">
+                                    <img src="images/home/desktop/blue_arrow.svg" class="arrow arrow-hover">
                                 </a>
                             </div>
 
@@ -102,6 +103,7 @@
                                     <p>Eau Potable</p>
 
                                     <img src="images/home/desktop/grey_arrow.svg" class="arrow">
+                                    <img src="images/home/desktop/blue_arrow.svg" class="arrow arrow-hover">
                                 </a>
                             </div>
 
@@ -112,6 +114,7 @@
                                     <p>Travaux de Terrassements</p>
 
                                     <img src="images/home/desktop/grey_arrow.svg" class="arrow">
+                                    <img src="images/home/desktop/blue_arrow.svg" class="arrow arrow-hover">
                                 </a>
                             </div>
 
@@ -122,6 +125,7 @@
                                     <p>Travaux Sans Tranchée</p>
 
                                     <img src="images/home/desktop/grey_arrow.svg" class="arrow">
+                                    <img src="images/home/desktop/blue_arrow.svg" class="arrow arrow-hover">
                                 </a>
                             </div>
 
@@ -209,7 +213,7 @@
                             <span class="ouest-counter js-counter" data-from="0" data-to="2012" data-speed="5000" data-refresh-interval="50">2012</span>
                             <span class="ouest-counter-label">Année de création</span>
                         </div>
-                        
+
                       </div>
                     </div>
                   </div>
@@ -259,28 +263,30 @@
 
         <script src="https://player.vimeo.com/api/player.js"></script>
         <script type="text/javascript">
-            function play_video() {
-                document.getElementById('main-video').style.display = 'block';
-                var iframe = document.getElementById('video-iframe');
-                var player = new Vimeo.Player(iframe);
-                player.play();
-            }
+        function play_video() {
+	document.getElementById('main-video').style.display = 'block';
+	var iframe = document.getElementById('video-iframe');
+	var player = new Vimeo.Player(iframe);
+	player.play();
+}
 
-            function close_video() {
-                document.getElementById('main-video').style.display = 'none';
-                var iframe = document.getElementById('video-iframe');
-                var player = new Vimeo.Player(iframe);
-                player.pause();
-            }
+function close_video() {
+	document.getElementById('main-video').style.display = 'none';
+	var iframe = document.getElementById('video-iframe');
+	var player = new Vimeo.Player(iframe);
+	player.pause();
+}
 
-            function toggle_menu() {
-                var menu_expanded = document.getElementById('hamburger-menu-list').style.display === 'block';
-                if (menu_expanded) {
-                    document.getElementById('hamburger-menu-list').style.display = 'none';
-                } else {
-                    document.getElementById('hamburger-menu-list').style.display = 'block';
-                }
-            }
-        </script>
+function toggle_menu() {
+	var menu_expanded =
+		document.getElementById('hamburger-menu-list').style.display ===
+		'block';
+	if (menu_expanded) {
+		document.getElementById('hamburger-menu-list').style.display = 'none';
+	} else {
+		document.getElementById('hamburger-menu-list').style.display = 'block';
+	}
+}
+</script>
     </body>
 </html>
